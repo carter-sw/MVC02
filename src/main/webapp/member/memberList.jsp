@@ -42,8 +42,8 @@
     <tr>
         <td><%=vo.getNum()%>
         </td>
-        <td><%=vo.getId()%>
-        </td>
+        <td><a href="memberContent.jsp?num=<%=vo.getNum()%>"><%=vo.getId()%></a></td>
+
         <td><%=vo.getPass()%>
         </td>
         <td><%=vo.getName()%>
@@ -54,7 +54,7 @@
         </td>
         <td><%=vo.getPhone()%>
         </td>
-        <td><input type="button" value="삭제" class="btn btn-warning" onclick="deleteFn(<%=vo.getName()%>)"></td>
+        <td><input type="button" value="삭제" class="btn btn-warning" onclick="deleteFn(<%=vo.getNum()%>)"></td>
     </tr>
     <% } %>
     <tr>
